@@ -9,4 +9,4 @@ def searching(search_arr, x):
 
 search_arr = [3, 4, 1, 6, 14]  
 x=4
-print(searching(search_arr, x))
+print("Index position for the element x is:", searching(search_arr, x)) 
