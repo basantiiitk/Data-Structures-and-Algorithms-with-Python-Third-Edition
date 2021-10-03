@@ -38,3 +38,27 @@ class SinglyLinkedList:
             count += 1
             prev = current
             current = current.next       
+            
+            
+            
+words = SinglyLinkedList()
+words.append('egg')
+words.append('ham')
+words.append('spam')
+
+current = words.tail
+while current:
+    print(current.data)
+    current = current.next
+    
+    
+    
+words.append_at_a_location('new', 2)
+
+current = words.tail
+while current:
+    print(current.data)
+    current = current.next
+    
+    
+
