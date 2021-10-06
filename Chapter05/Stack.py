@@ -18,8 +18,28 @@ class Stack:
             self.top = node                  
         else:  
             self.top = node  
-            self.size += 1       
+            self.size += 1 
+            
+            
+            
+    def pop(self):  
+        if self.top:  
+            data = self.top.data  
+            self.size -= 1   
+            if self.top.next:  #check if there is more than one node. 
+                self.top = self.top.next  
+            else:  
+                self.top = None  
+            return data  
+        else:  
+            return None              
         
+        
+    def peek(self):  
+        if self.top:
+            return self.top.data  
+        else:  
+            return None          
         
         
         
@@ -36,6 +56,13 @@ while current:
     current = current.next
 
 
+words.pop()
+
+current = words.top
+while current:
+    print(current.data)
+    current = current.next
 
 
+words.peek()
 
