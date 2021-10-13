@@ -15,7 +15,7 @@ edges_list = []
 
 for key in matrix_elements: 
     for neighbor in graph[key]: 
-       edges_list.append((key,neighbor)) 
+        edges_list.append((key,neighbor)) 
 
 
 print(edges_list)
@@ -28,4 +28,4 @@ for edge in edges_list:
         adjacency_matrix[index_of_first_vertex][index_of_second_vertex] = 1 
 
 
-println(adjacency_matrix)
+print(adjacency_matrix)
