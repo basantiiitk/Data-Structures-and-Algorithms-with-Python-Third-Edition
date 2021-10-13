@@ -61,3 +61,6 @@ for i in unsorted_list:
     h.insert(i)  
 
 print("Unsorted list: {}".format(unsorted_list))  
+
+
+h.heap_sort()
