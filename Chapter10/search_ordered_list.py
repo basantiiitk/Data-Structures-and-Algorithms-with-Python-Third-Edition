@@ -1,5 +1,5 @@
 
-def search(ordered_list, term):
+def search_ordered(ordered_list, term):
     ordered_list_size = len(ordered_list)
     for i in range(ordered_list_size):
         if term == ordered_list[i]:
@@ -14,7 +14,7 @@ def search(ordered_list, term):
 scores = [2, 3, 4, 6, 7]
 
 search_term = 5
-position = search(scores, search_term)
+position = search_ordered(scores, search_term)
 
 if position is None:
     print("{} not found".format(search_term))
@@ -23,7 +23,7 @@ else:
 
 
 search_term = 2
-position = search(scores, search_term)
+position = search_ordered(scores, search_term)
 if position is None:
     print("{} not found".format(search_term))
 else:
