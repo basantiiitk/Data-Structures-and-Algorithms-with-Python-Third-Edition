@@ -1,13 +1,14 @@
-def binary_search(arr, low, high, key):
-    while low <= high:  
-        mid = int(low + (high - low)/2)
+def binary_search(arr, start, end, key):
+    while start <= end:  
+        mid = int(start + int((end - start)/2))
         if arr[mid] == key:  
             return mid  
         elif arr[mid] < key:  
-            low = mid + 1  
+            start = mid + 1  
         else:  
-            high = mid - 1  
+            end = mid - 1  
     return -1  
+
 
 
 arr = [ 2, 3, 4, 2, 10, 40] 
